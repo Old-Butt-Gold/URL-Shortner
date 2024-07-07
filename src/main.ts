@@ -29,7 +29,7 @@ shortBtn.addEventListener('click', () => {
             shortenedUrlTextarea.value = data;
         })
         .catch(error => {
-            shortenedUrlTextarea.value = "Error: Unable to shorten URL!";
+            shortenedUrlTextarea.value = `Error: ${error.message}`;
         });
 });
 
